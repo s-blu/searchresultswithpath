@@ -1,0 +1,7 @@
+base   searchresultswithpath
+author Sam B
+email  sam@s-blu.de
+date   2016-02-20
+name   searchresultswithpath plugin
+desc   Displays Pagenames in Search Results with their containing Namespace
+url    http://s-blu.de
