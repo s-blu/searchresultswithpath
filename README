@@ -1,9 +1,12 @@
 searchresultswithpath Plugin for DokuWiki
 
-Displays Pagenames in Search Results with their containing Namespace
+Displays Pagenames in Search Results with their containing Namespace when use_heading is on
 
 All documentation for this plugin can be found at
-http://s-blu.de
+https://www.dokuwiki.org/plugin:searchresultswithpath
+
+Sources can be found at
+https://github.com/s-blu/searchresultswithpath
 
 If you install this plugin manually, make sure it is installed in
 lib/plugins/searchresultswithpath/ - if the folder is called different it
