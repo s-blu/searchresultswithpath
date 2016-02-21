@@ -32,7 +32,7 @@ class action_plugin_searchresultswithpath extends DokuWiki_Action_Plugin {
      * @return void
      */
 
-    public function handle_search_query_pagelookup(Doku_Event &$event, $param) {
+    public function handle_search_query_pagelookup(Doku_Event &$event) {
         $useNsHeading = $this->getConf('use_ns_heading');
         $showPathOnlyAsHeading = $this->getConf('show_path_only_as_heading');
 
@@ -51,6 +51,12 @@ class action_plugin_searchresultswithpath extends DokuWiki_Action_Plugin {
             }
 
             if($ns) $ns = ' ['.$ns.']';
+            /*
+             * Fix #1: Add the pageId to the title, if the page has no heading
+             * Normally this get handled by Dokuwiki itself, but we always set an title here and
+             * bypass Dokuwikis handling
+             */
+            if (!$title) $title = noNs($id);
             $event->result[$id] = $title . $ns;
         }
     }
