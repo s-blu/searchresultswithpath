@@ -1,4 +1,6 @@
-searchresultswithpath Plugin for DokuWiki
+# searchresultswithpath Plugin for DokuWiki
+
+## ARCHIVED, WILL NOT BE UPDATED
 
 Displays Pagenames in Search Results with their containing Namespace when use_heading is on
 
